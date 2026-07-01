@@ -80,7 +80,7 @@ MonoBehaviour:
   cubePrefab: {fileID: 675606987290096302, guid: c02bc9ac2242e484e81b6559520139a4, type: 3}
   visualRoot: {fileID: 8656100846828135941}
   spacing: 1.05
-  followSpeed: 18
+  followSpeed: 17
   liftHeight: 0.5
   tiltAmount: 12
   tiltSmooth: 12

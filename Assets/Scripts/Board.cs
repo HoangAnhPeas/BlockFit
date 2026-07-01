@@ -128,6 +128,9 @@ public class Board : MonoBehaviour
             cell.SetCube(cube);
         }
 
+        // point the block is placed, we can mark it as placed
+        GameManager.Instance.AddScore(block.ShapeData.score);
+
         ClearRows();
         ClearColumns();
     }
@@ -201,6 +204,9 @@ public class Board : MonoBehaviour
             {
                 cells[x, y].ClearCube();
             }
+
+            //add score for clearing a row
+            GameManager.Instance.AddScore(width * 10);
         }
     }
 
@@ -227,5 +233,8 @@ public class Board : MonoBehaviour
                 cells[x, y].ClearCube();
             }
         }
+
+        //add score for clearing a column
+        GameManager.Instance.AddScore(width * 10);
     }
 }
